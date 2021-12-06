@@ -1,0 +1,5 @@
+FROM python:latest
+RUN apt-get update && apt-get upgrade -y
+COPY data.py requirements.txt ./
+RUN pip install -r requirements.txt
+CMD ["python","data.py"]
