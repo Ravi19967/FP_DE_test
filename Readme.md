@@ -7,8 +7,8 @@ Prequistives: Python37, Docker and Shell
 
 ## Adding new Files
 * To update the input files you can update the `data.py` file for input variables. Currently they are fetching input directly from github repo
-`https://github.com/k-edge/data_engineering_challenge_fp` 
-*If you want to add input files locally you will have to update the docker file to copy the input files and also update the read function in the JSON Reader class accordingly.
+`https://github.com/k-edge/data_engineering_challenge_fp`
+* If you want to add input files locally you will have to update the docker file to copy the input files and also update the read function in the JSON Reader class accordingly.
 
 ## Design Considerations
 * Json loading happens in memory so large json files can be a problem with memory
