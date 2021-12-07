@@ -119,7 +119,7 @@ def transform_data_report(workorder_data: pd.DataFrame, metrics_data: pd.DataFra
             cor, pval = pearsonr(prod_data.production, adjusted_param_data)
             list_correl.append((prod, param, cor, pval))
         
-        list_correl.sort(key=lambda x: x[0],reverse=True)
+        list_correl.sort(key=lambda x: x[2],reverse=True)
         output_list.extend(list_correl[:3])
 
     output_results = pd.DataFrame(output_list, columns=['Product','Parameter','Correlation', 'P-Val'])
